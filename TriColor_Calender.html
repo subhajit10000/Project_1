@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+</head>
+<body>
+    <div class="year">
+        <div class="month">JANUARY</div>
+        <div class="month">FEBRUARY</div>
+        <div class="month">MARCH</div>
+        <div class="month">APRIL</div>
+        <div class="month">MAY</div>
+        <div class="month">JUNE</div>
+        <div class="month">JULY</div>
+        <div class="month">AUGUST</div>
+        <div class="month">SEPTEMBER</div>
+        <div class="month">OCTOBER</div>
+        <div class="month">NOVEMBER</div>
+        <div class="month">DECEMBER</div>
+    </div>
+</body>
+<script>
+    const y= document.querySelector('.year')
+    for (let i = 0; i < y.children.length; i++) {
+        y.children[i].style.padding="16px"
+    }
+    for (let j = 0; j < 4; j++) {
+        y.children[j].style.backgroundColor="orange"        
+    }
+        for (let k = 4; k < 8; k++) {
+        y.children[k].style.backgroundColor="white"        
+    }
+        for (let l = 8; l < 12; l++) {
+        y.children[l].style.backgroundColor="green"        
+    }
+        for (let m = 0; m < 12; m++) {
+        y.children[m].style.fontWeight = "bold";       
+    }
+</script>
+</html>
